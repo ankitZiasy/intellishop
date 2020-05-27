@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:minWidth="500dp"
+    android:minHeight="500dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_width"
+            android:layout_margin="@dimen/margin20"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/padding10"
+            android:src="@drawable/family" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin10"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin20"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Add Family Member"
+                android:textColor="@color/colorWhite"
+                android:textSize="17dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin40"
+                android:layout_marginRight="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin20"
+                android:padding="@dimen/padding5"
+                android:text="Name"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin40"
+                android:layout_marginRight="@dimen/margin40"
+                android:backgroundTint="@color/colorYellow"
+                android:padding="@dimen/padding10"
+                android:id="@+id/edtName"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin40"
+                android:layout_marginRight="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin20"
+                android:padding="@dimen/padding5"
+                android:text="Mobile Number"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin40"
+                android:layout_marginRight="@dimen/margin40"
+                android:backgroundTint="@color/colorYellow"
+                android:inputType="number"
+                android:id="@+id/edtMobile"
+                android:padding="@dimen/padding10"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtAddItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin40"
+                android:layout_marginRight="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin20"
+                android:background="@color/colorYellow"
+                android:gravity="center"
+                android:padding="@dimen/padding10"
+                android:text="Add Family"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

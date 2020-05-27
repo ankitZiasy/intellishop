@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:text="Press for signal"
+        android:textColor="@color/text_normal"
+        android:textSize="40sp"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/count_spray"
+            android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:text="4"
+            android:textColor="@color/text_normal"
+            android:textSize="40sp"
+            android:typeface="serif" />
+
+        <ImageButton
+            android:background="@color/clear"
+            android:id="@+id/btnSpray"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+         />
+    </LinearLayout>
+</RelativeLayout>

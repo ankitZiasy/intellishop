@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin15"
+        android:padding="@dimen/padding10"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Scan Bluetooth Device"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_list_connected"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@color/colorPrimary"
+            android:id="@+id/title_device_connected"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:paddingLeft="5dp"
+            android:text="@string/title_device_connected"
+            android:textColor="@color/colorPrimary"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/lvDeviceListConnected"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:stackFromBottom="false" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <WebView
+            android:background="@color/colorAccent"
+            android:id="@+id/main_webview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_signal_wait"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:background="@color/colorPrimary"
+                android:id="@+id/btn_on"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:text="LED ON" />
+
+            <Button
+                android:background="@color/colorPrimary"
+                android:id="@+id/btn_off"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:text="LED OFF" />
+        </LinearLayout>
+
+        <TextView
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:id="@+id/text_title_wait"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Press Spray Button for Transaction!"
+
+            android:textSize="28sp"
+            android:typeface="serif"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:background="@color/colorAccent"
+        android:id="@+id/content"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

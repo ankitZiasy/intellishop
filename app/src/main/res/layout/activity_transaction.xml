@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/barcode_scanner"
+        android:background="@color/bg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:name="info.androidhive.barcode.BarcodeReader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          />
+    </LinearLayout>
+    <TextView
+    android:textSize="40sp"
+    android:typeface="serif"
+    android:textColor="@color/text_normal"
+    android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:id="@+id/form_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="16dp"
+    android:text="@string/create_transaction" /><TextView
+    android:textSize="20sp"
+    android:typeface="serif"
+    android:textColor="@color/text_normal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/sender_address" /><EditText
+    android:id="@+id/text_sender_add"
+    android:focusable="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/sender_address"
+    android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time" /><FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:textColor="@color/text_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Destination_address" />
+
+    <ImageButton
+        android:textSize="12sp"
+        android:typeface="serif"
+        android:textColor="@color/text_normal"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/btn_scan"
+        android:background="@color/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:text="@string/scan" />
+</FrameLayout><EditText
+    android:id="@+id/text_destination_add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/Destination_address"
+    android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time" /><TextView
+    android:textSize="20sp"
+    android:typeface="serif"
+    android:textColor="@color/text_normal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/amount" /><EditText
+    android:id="@+id/text_value"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/amount"
+    android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|number|numberSigned|numberDecimal|numberPassword|phone" /><Button
+    android:textColor="#fff"
+    android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:id="@+id/btn_send"
+    android:background="@color/colorPrimaryDark"
+    android:paddingLeft="70dp"
+    android:paddingTop="5dp"
+    android:paddingRight="70dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:text="Send" /><WebView
+    android:id="@+id/main_webview"
+    android:background="@color/bg"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+</android.support.constraint.ConstraintLayout>

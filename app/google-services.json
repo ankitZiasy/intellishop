@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "920122474036",
+    "firebase_url": "https://intellishopping-5deb9.firebaseio.com",
+    "project_id": "intellishopping-5deb9",
+    "storage_bucket": "intellishopping-5deb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920122474036:android:bb15e53d9198918e",
+        "android_client_info": {
+          "package_name": "com.ziasy.haanbaba.intellishopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920122474036-mfto31c6piplak3cgfp4drqgcoduouh4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "920122474036-mfto31c6piplak3cgfp4drqgcoduouh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIaqgbw_sXHPz01LnERW1nu4UTclxFgVo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:paddingLeft="5dp"
+            android:text="select_device"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvDeviceListPairedDeviceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="5dp"
+            android:text="@string/title_paired_devices"
+            android:textColor="@color/text_button"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/lvDeviceListPairedDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="false" />
+
+        <TextView
+            android:id="@+id/tvDeviceListNewDeviceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="5dp"
+            android:text="@string/title_other_devices"
+            android:textColor="@color/text_button"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lvDeviceListNewDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="false" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDeviceListScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/button_scan"
+        android:textColor="@color/text_button" />
+</RelativeLayout>

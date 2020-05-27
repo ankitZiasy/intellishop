@@ -1,0 +1,57 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:text="@string/app_name"
+        android:gravity="left|center"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/margin15"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_horizontal"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/margin20"
+        android:padding="@dimen/padding5"
+        android:gravity="right">
+
+
+        <ImageView
+            android:id="@+id/walllet"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/toolbar_notification" />
+
+        <TextView
+            android:id="@+id/wallet_count"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="top|right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="3dp"
+            android:background="#fff"
+            android:gravity="top|center"
+            android:text="0"
+
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</android.support.v7.widget.Toolbar>
